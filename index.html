@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" type="module" defer></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <form class="form-inline m-auto row">
+        <input
+          id="input-lg"
+          class="form-control mr-sm-4 input-sm"
+          type="search"
+          placeholder="Search character by name"
+          aria-label="Search"
+          required="true"
+        />
+        <button class="btn my-2 my-sm-0" type="submit">Search</button>
+      </form>
+      <ul class="nav">
+        <li class="nav-item" id="fav">
+          <a class="nav-link text-light" href="#"> My favorite characters</a>
+        </li>
+      </ul>
+    </nav>
+    <h1 class="text-center" id="heading"></h1>
+    <div class="container">
+      <button class="btn btn-dark" id="back">Back to Comics</button>
+      <h5 id="num" class="mt-2"></h5>
+      <div class="row" id="output"></div>
+    </div>
+  </body>
+</html>
